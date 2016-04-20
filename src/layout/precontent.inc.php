@@ -59,12 +59,6 @@ if (isset($_POST['login__submit']) && $_POST['login__password'] === 'admin') {
         </button>
 
         <?php include ('includes/main-nav.inc.php'); ?>
-        
-        <?php if (isset($_SESSION['isLoggedIn'])): ?>
-        <a href="<?= $pages->logout->url; ?>?returnUrl=<?= $currentPage; ?>"><?= $pages->logout->mainNavText; ?></a>
-        <?php else: ?>
-        <a href="<?= $pages->login->url; ?>?returnUrl=<?= $currentPage; ?>"><?= $pages->login->mainNavText; ?></a>
-        <?php endif; ?>
 
     </header>
 

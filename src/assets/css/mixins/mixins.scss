@@ -62,6 +62,9 @@
     font-family: $font-bold;
     font-weight:normal;
 }
+@mixin small-text() {
+    font-size:pxToEm($base-font-size * 0.9);
+}
 @mixin hidden() {
     font-size:0 !important;
     height:0 !important;
@@ -152,6 +155,9 @@
 }
 @mixin center-content {
     text-align:center;
+}
+@mixin content-right {
+    text-align:right;
 }
 @mixin border-radius($tl: 2px, $tr: $tl, $br: $tl, $bl: $br) {
     -webkit-border-radius:$tl $tr $br $bl;
