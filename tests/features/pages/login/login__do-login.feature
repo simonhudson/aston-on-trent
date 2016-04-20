@@ -17,14 +17,16 @@ Feature: Log in functionality
         And I navigate to the "Log in" page
         When I enter value "" in element "[data-hook=login__password]"
         And I submit the form "[data-hook=login__form]"
-        Then the browser loads the "Log in" page
+        Then there is a "[data-val-msg-for=login__password]" element
+        And the "[data-val-msg-for=login__password]" element contains the text "Please enter your password."
 
     Scenario: Submit invalid value
         Given I am a user who is not logged in
         And I navigate to the "Log in" page
-        When I enter value "foo" in element "[data-hook=login__password]"
+        When I enter value "xxx" in element "[data-hook=login__password]"
         And I submit the form "[data-hook=login__form]"
-        Then the browser loads the "Log in" page
+        Then there is a "[data-val-msg-for=login__password]" element
+        And the "[data-val-msg-for=login__password]" element contains the text "Incorrect password."
 
     Scenario: Submit valid value
         Given I am a user who is not logged in

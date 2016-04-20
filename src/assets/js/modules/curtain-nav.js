@@ -9,7 +9,7 @@ var CurtainMenu = {
         CurtainMenu.Obj.level1 = $('.js-curtain--level-1');
         CurtainMenu.Obj.level2 = $('.js-curtain--level-2');
         CurtainMenu.Obj.links = $('.level-1__link');
-        $('.curtain').height($(document).height());
+        $('.curtain-nav').height($(document).height());
         CurtainMenu.eventListeners();
     },
 

@@ -245,7 +245,7 @@ var s_Validation = {
 
         if (label.hasClass('hidden')) {
             attachLocation = 'after';
-            attachErrorTo.siblings('.status-msg--is-error').attr('data-val-msg-for', input.attr('id'));
+            // attachErrorTo.siblings('.status-msg--is-error').attr('data-val-msg-for', input.attr('data-hook'));
             if (input.children('option').length > 0) {
                 attachLocation = 'append';
                 attachErrorTo = input.parents('fieldset').eq(0).children('legend');
@@ -255,9 +255,15 @@ var s_Validation = {
         s_Validation.removeErrorMsg(input, formObj);
         input.addClass(s_Validation.errorMsgSelector.input);
         s_StatusMessage.create('error', errorMsgText, attachErrorTo, attachLocation);
-        attachErrorTo.find('.status-msg--is-error')
-            .attr('data-val-msg-for', input.attr('id'))
-            .attr('data-test-hook', 'validation-error--' + input.attr('data-test-hook'));
+        if (label.hasClass('hidden')) {
+            attachErrorTo.siblings('.status-msg--is-error')
+            .attr('data-val-msg-for', input.attr('data-hook'))
+            .attr('data-hook', 'validation-error--' + input.attr('data-hook'));
+        } else {
+            attachErrorTo.find('.status-msg--is-error')
+            .attr('data-val-msg-for', input.attr('data-hook'))
+            .attr('data-hook', 'validation-error--' + input.attr('data-hook'));
+        }
         formObj.isValid = false;
     },
 
