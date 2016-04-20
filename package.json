@@ -1,0 +1,23 @@
+{
+  "name": "aston-on-trent",
+  "version": "1.0.0",
+  "description": "Aston-on-Trent",
+  "dependencies": {
+    "sass": "*",
+    "gulp": "*",
+    "browser-sync": "*",
+    "gulp-concat": "*",
+    "gulp-cucumber": "*",
+    "del": "*",
+    "gulp-util": "*",
+    "gulp-imagemin": "*",
+    "gulp-minify-css": "*",
+    "gulp-rename": "*",
+    "gulp-ruby-sass": "*",
+    "gulp-uglify": "*",
+    "cucumber": "*",
+    "chimp": "*",
+    "a11y": "*"
+  },
+  "devDependencies": {}
+}
