@@ -1,0 +1,717 @@
+[
+  {
+    "id": "Home-page-accessibility",
+    "name": "Home page accessibility",
+    "description": "  As a user\r\n  I want the Home page to have a good level of accessibility\r\n  So that it can be accessed, used and understood by as many users as possible",
+    "line": 2,
+    "keyword": "Feature",
+    "tags": [
+      {
+        "name": "@home",
+        "line": 1
+      },
+      {
+        "name": "@a11y",
+        "line": 1
+      }
+    ],
+    "uri": "C:/xampp/htdocs/github_simonhudson/aston-on-trent/tests/features/pages/home/home__accessibility.feature",
+    "elements": [
+      {
+        "name": "WCAG compliance",
+        "id": "Home-page-accessibility;wcag-compliance",
+        "line": 7,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "name": "I am a user",
+            "line": 8,
+            "keyword": "Given ",
+            "result": {
+              "status": "passed",
+              "duration": 983457
+            },
+            "match": {}
+          },
+          {
+            "name": "I navigate to the \"Home\" page",
+            "line": 9,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 1203165963
+            },
+            "match": {}
+          },
+          {
+            "name": "the \"Home\" page should pass WCAG-AA compliance",
+            "line": 10,
+            "keyword": "Then ",
+            "result": {
+              "status": "failed",
+              "duration": 4537597011,
+              "error_message": "AssertionError: \n\n*** 2 accessibility errors found ***\n\nWARNING\nThese elements are focusable but either invisible or obscured by another element\n\nbody > .access-nav > UL > .access-nav__item > .access-nav__link\nbody > .header--global > .curtain-nav.main-nav--level-1.js-curtain--level-1 > .level-1__nav > .level-1__list > .main-nav__item.level-1__item.main-nav__item > .main-nav__link.level-1__link.main-nav__link\nbody > .header--global > .curtain-nav.main-nav--level-1.js-curtain--level-1 > .level-1__nav > .level-1__list > LI:nth-of-type(2) > .main-nav__link.level-1__link.main-nav__link\nbody > .header--global > .curtain-nav.main-nav--level-1.js-curtain--level-1 > .level-1__nav > .level-1__list > LI:nth-of-type(2) > .sub-nav__toggle\nbody > .header--global > .curtain-nav.main-nav--level-1.js-curtain--level-1 > .level-1__nav > .level-1__list > LI:nth-of-type(3) > .main-nav__link.level-1__link.main-nav__link\nbody > .header--global > .curtain-nav.main-nav--level-1.js-curtain--level-1 > .level-1__nav > .level-1__list > LI:nth-of-type(3) > .sub-nav__toggle\nbody > .header--global > .curtain-nav.main-nav--level-1.js-curtain--level-1 > .level-1__nav > .level-1__list > LI:nth-of-type(4) > .main-nav__link.level-1__link.main-nav__link\nbody > .header--global > .curtain-nav.main-nav--level-1.js-curtain--level-1 > .level-1__nav > .level-1__list > LI:nth-of-type(4) > .sub-nav__toggle\nbody > .header--global > .curtain-nav.main-nav--level-1.js-curtain--level-1 > .level-1__nav > .level-1__list > LI:nth-of-type(5) > .main-nav__link.level-1__link.main-nav__link\nbody > .header--global > .curtain-nav.main-nav--level-1.js-curtain--level-1 > .level-1__nav > .level-1__list > LI:nth-of-type(5) > .sub-nav__toggle\nbody > .header--global > .curtain-nav.main-nav--level-1.js-curtain--level-1 > .level-1__nav > .level-1__list > LI:nth-of-type(6) > .main-nav__link.level-1__link.main-nav__link\n_____________________________\n\nWARNING\nText elements should have a reasonable contrast ratio\n\nbody > .access-nav > UL > .access-nav__item > .access-nav__link\n_____________________________\n\n    at a11y.js:27:20\n    at C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\a11y\\index.js:46:9\n    at ChildProcess.exithandler (child_process.js:204:7)\n    at emitTwo (events.js:100:13)\n    at ChildProcess.emit (events.js:185:7)\n    at maybeClose (internal/child_process.js:827:16)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)"
+            },
+            "match": {}
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 389684
+            },
+            "match": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Home-page-basic-content",
+    "name": "Home page basic content",
+    "description": "  As a user\r\n  I want the Home page to have some basic content\r\n  So that I can understand what the page is about",
+    "line": 2,
+    "keyword": "Feature",
+    "tags": [
+      {
+        "name": "@home",
+        "line": 1
+      }
+    ],
+    "uri": "C:/xampp/htdocs/github_simonhudson/aston-on-trent/tests/features/pages/home/home__basic-content.feature",
+    "elements": [
+      {
+        "name": "Page loads successfully",
+        "id": "Home-page-basic-content;page-loads-successfully",
+        "line": 7,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "name": "I am a user",
+            "line": 8,
+            "keyword": "Given ",
+            "result": {
+              "status": "passed",
+              "duration": 136972
+            },
+            "match": {}
+          },
+          {
+            "name": "I navigate to the \"Home\" page",
+            "line": 9,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 190929600
+            },
+            "match": {}
+          },
+          {
+            "name": "the browser loads the \"Home\" page",
+            "line": 10,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 215592033
+            },
+            "match": {}
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 173954
+            },
+            "match": {}
+          }
+        ]
+      },
+      {
+        "name": "Page title",
+        "id": "Home-page-basic-content;page-title",
+        "line": 12,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "name": "I am a user",
+            "line": 13,
+            "keyword": "Given ",
+            "result": {
+              "status": "passed",
+              "duration": 132863
+            },
+            "match": {}
+          },
+          {
+            "name": "I navigate to the \"Home\" page",
+            "line": 14,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 201641126
+            },
+            "match": {}
+          },
+          {
+            "name": "there is a \"title\" element",
+            "line": 15,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 90941995
+            },
+            "match": {}
+          },
+          {
+            "name": "the title is \"Aston-on-Trent\"",
+            "line": 16,
+            "keyword": "And ",
+            "result": {
+              "status": "passed",
+              "duration": 35064746
+            },
+            "match": {}
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 207170
+            },
+            "match": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Log-in-page-accessibility",
+    "name": "Log in page accessibility",
+    "description": "  As a user\r\n  I want the Log in page to have a good level of accessibility\r\n  So that it can be accessed, used and understood by as many users as possible",
+    "line": 2,
+    "keyword": "Feature",
+    "tags": [
+      {
+        "name": "@login",
+        "line": 1
+      },
+      {
+        "name": "@a11y",
+        "line": 1
+      }
+    ],
+    "uri": "C:/xampp/htdocs/github_simonhudson/aston-on-trent/tests/features/pages/login/login__accessibility.feature",
+    "elements": [
+      {
+        "name": "WCAG compliance",
+        "id": "Log-in-page-accessibility;wcag-compliance",
+        "line": 7,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "name": "I am a user",
+            "line": 8,
+            "keyword": "Given ",
+            "result": {
+              "status": "passed",
+              "duration": 182514
+            },
+            "match": {}
+          },
+          {
+            "name": "I navigate to the \"Log in\" page",
+            "line": 9,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 146909302
+            },
+            "match": {}
+          },
+          {
+            "name": "the \"Log in\" page should pass WCAG-AA compliance",
+            "line": 10,
+            "keyword": "Then ",
+            "result": {
+              "status": "failed",
+              "duration": 4093195864,
+              "error_message": "AssertionError: \n\n*** 2 accessibility errors found ***\n\nWARNING\nThese elements are focusable but either invisible or obscured by another element\n\nbody > .access-nav > UL > .access-nav__item > .access-nav__link\nbody > .header--global > .curtain-nav.main-nav--level-1.js-curtain--level-1 > .level-1__nav > .level-1__list > .main-nav__item.level-1__item.main-nav__item > .main-nav__link.level-1__link.main-nav__link\nbody > .header--global > .curtain-nav.main-nav--level-1.js-curtain--level-1 > .level-1__nav > .level-1__list > LI:nth-of-type(2) > .main-nav__link.level-1__link.main-nav__link\nbody > .header--global > .curtain-nav.main-nav--level-1.js-curtain--level-1 > .level-1__nav > .level-1__list > LI:nth-of-type(2) > .sub-nav__toggle\nbody > .header--global > .curtain-nav.main-nav--level-1.js-curtain--level-1 > .level-1__nav > .level-1__list > LI:nth-of-type(3) > .main-nav__link.level-1__link.main-nav__link\nbody > .header--global > .curtain-nav.main-nav--level-1.js-curtain--level-1 > .level-1__nav > .level-1__list > LI:nth-of-type(3) > .sub-nav__toggle\nbody > .header--global > .curtain-nav.main-nav--level-1.js-curtain--level-1 > .level-1__nav > .level-1__list > LI:nth-of-type(4) > .main-nav__link.level-1__link.main-nav__link\nbody > .header--global > .curtain-nav.main-nav--level-1.js-curtain--level-1 > .level-1__nav > .level-1__list > LI:nth-of-type(4) > .sub-nav__toggle\nbody > .header--global > .curtain-nav.main-nav--level-1.js-curtain--level-1 > .level-1__nav > .level-1__list > LI:nth-of-type(5) > .main-nav__link.level-1__link.main-nav__link\nbody > .header--global > .curtain-nav.main-nav--level-1.js-curtain--level-1 > .level-1__nav > .level-1__list > LI:nth-of-type(5) > .sub-nav__toggle\nbody > .header--global > .curtain-nav.main-nav--level-1.js-curtain--level-1 > .level-1__nav > .level-1__list > LI:nth-of-type(6) > .main-nav__link.level-1__link.main-nav__link\n_____________________________\n\nWARNING\nText elements should have a reasonable contrast ratio\n\nbody > .access-nav > UL > .access-nav__item > .access-nav__link\n_____________________________\n\n    at a11y.js:27:20\n    at C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\a11y\\index.js:46:9\n    at ChildProcess.exithandler (child_process.js:204:7)\n    at emitTwo (events.js:100:13)\n    at ChildProcess.emit (events.js:185:7)\n    at maybeClose (internal/child_process.js:827:16)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)"
+            },
+            "match": {}
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 163339
+            },
+            "match": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Log-in-page-basic-content",
+    "name": "Log in page basic content",
+    "description": "  As a user\r\n  I want the Log in page to have some basic content\r\n  So that I can understand what the page is about",
+    "line": 2,
+    "keyword": "Feature",
+    "tags": [
+      {
+        "name": "@login",
+        "line": 1
+      }
+    ],
+    "uri": "C:/xampp/htdocs/github_simonhudson/aston-on-trent/tests/features/pages/login/login__basic-content.feature",
+    "elements": [
+      {
+        "name": "Page loads successfully",
+        "id": "Log-in-page-basic-content;page-loads-successfully",
+        "line": 7,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "name": "I am a user",
+            "line": 8,
+            "keyword": "Given ",
+            "result": {
+              "status": "passed",
+              "duration": 862922
+            },
+            "match": {}
+          },
+          {
+            "name": "I navigate to the \"Log in\" page",
+            "line": 9,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 193885790
+            },
+            "match": {}
+          },
+          {
+            "name": "the browser loads the \"Log in\" page",
+            "line": 10,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 104388846
+            },
+            "match": {}
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 138684
+            },
+            "match": {}
+          }
+        ]
+      },
+      {
+        "name": "Page title",
+        "id": "Log-in-page-basic-content;page-title",
+        "line": 12,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "name": "I am a user",
+            "line": 13,
+            "keyword": "Given ",
+            "result": {
+              "status": "passed",
+              "duration": 125329
+            },
+            "match": {}
+          },
+          {
+            "name": "I navigate to the \"Log in\" page",
+            "line": 14,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 143467890
+            },
+            "match": {}
+          },
+          {
+            "name": "there is a \"title\" element",
+            "line": 15,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 51279452
+            },
+            "match": {}
+          },
+          {
+            "name": "the title is \"Aston-on-Trent\"",
+            "line": 16,
+            "keyword": "And ",
+            "result": {
+              "status": "passed",
+              "duration": 26764264
+            },
+            "match": {}
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 130808
+            },
+            "match": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Log-in-functionality",
+    "name": "Log in functionality",
+    "description": "  As a user\r\n  I want to be able to log in to the site\r\n  So that I can access features and functionality",
+    "line": 2,
+    "keyword": "Feature",
+    "tags": [
+      {
+        "name": "@login",
+        "line": 1
+      },
+      {
+        "name": "@watch",
+        "line": 1
+      }
+    ],
+    "uri": "C:/xampp/htdocs/github_simonhudson/aston-on-trent/tests/features/pages/login/login__do-login.feature",
+    "elements": [
+      {
+        "name": "Log in form exists",
+        "id": "Log-in-functionality;log-in-form-exists",
+        "line": 7,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "name": "I am a user who is not logged in",
+            "line": 8,
+            "keyword": "Given ",
+            "result": {
+              "status": "passed",
+              "duration": 133368284
+            },
+            "match": {}
+          },
+          {
+            "name": "I navigate to the \"Log in\" page",
+            "line": 9,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 139782325
+            },
+            "match": {}
+          },
+          {
+            "name": "there is a \"[data-hook=login__form]\" element",
+            "line": 10,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 61192091
+            },
+            "match": {}
+          },
+          {
+            "name": "there is a \"[data-hook=login__password]\" element",
+            "line": 11,
+            "keyword": "And ",
+            "result": {
+              "status": "passed",
+              "duration": 44459633
+            },
+            "match": {}
+          },
+          {
+            "name": "there is a \"[data-hook=login__returnUrl]\" element",
+            "line": 12,
+            "keyword": "And ",
+            "result": {
+              "status": "passed",
+              "duration": 49358082
+            },
+            "match": {}
+          },
+          {
+            "name": "there is a \"[data-hook=login__submit]\" element",
+            "line": 13,
+            "keyword": "And ",
+            "result": {
+              "status": "passed",
+              "duration": 55112604
+            },
+            "match": {}
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 127726
+            },
+            "match": {}
+          }
+        ]
+      },
+      {
+        "name": "Submit empty value",
+        "id": "Log-in-functionality;submit-empty-value",
+        "line": 15,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "name": "I am a user who is not logged in",
+            "line": 16,
+            "keyword": "Given ",
+            "result": {
+              "status": "passed",
+              "duration": 150325719
+            },
+            "match": {}
+          },
+          {
+            "name": "I navigate to the \"Log in\" page",
+            "line": 17,
+            "keyword": "And ",
+            "result": {
+              "status": "passed",
+              "duration": 163935908
+            },
+            "match": {}
+          },
+          {
+            "name": "I enter value \"\" in element \"[data-hook=login__password]\"",
+            "line": 18,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 182899293
+            },
+            "match": {}
+          },
+          {
+            "name": "I submit the form \"[data-hook=login__form]\"",
+            "line": 19,
+            "keyword": "And ",
+            "result": {
+              "status": "passed",
+              "duration": 176069544
+            },
+            "match": {}
+          },
+          {
+            "name": "there is a \"[data-val-msg-for=login__password]\" element",
+            "line": 20,
+            "keyword": "Then ",
+            "result": {
+              "status": "failed",
+              "duration": 513030800,
+              "error_message": "Error: element ([data-val-msg-for=login__password]) still not existing after 500ms\n    at Object.Future.wait (C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\fibers\\future.js:449:15)\n    at Object.<anonymous> (C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\wdio-sync\\build\\index.js:345:27)\n    at World.<anonymous> (element-exists.js:4:17)\n    at C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\meteor-promise\\fiber_pool.js:33:40\n    - - - - -\n    at new CommandError (C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\webdriverio\\build\\lib\\utils\\ErrorHandler.js:109:12)\n    at C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\webdriverio\\build\\lib\\commands\\waitForExist.js:80:19\n    at Object.reject (C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\webdriverio\\build\\lib\\webdriverio.js:243:20)\n    at Object.callErrorHandlerAndReject (C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\webdriverio\\build\\lib\\webdriverio.js:217:27)\n    at C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\webdriverio\\build\\lib\\webdriverio.js:192:58\n    at run (C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\webdriverio\\node_modules\\core-js\\library\\modules\\es6.promise.js:104:47)\n    at C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\webdriverio\\node_modules\\core-js\\library\\modules\\es6.promise.js:115:28\n    at flush (C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\webdriverio\\node_modules\\core-js\\library\\modules\\$.microtask.js:19:5)\n    at nextTickCallbackWith0Args (node.js:453:9)\n    at process._tickCallback (node.js:382:13)"
+            },
+            "match": {}
+          },
+          {
+            "name": "the \"[data-val-msg-for=login__password]\" element contains the text \"Please enter your password.\"",
+            "line": 21,
+            "keyword": "And ",
+            "result": {
+              "status": "skipped"
+            },
+            "match": {}
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 130808
+            },
+            "match": {}
+          }
+        ]
+      },
+      {
+        "name": "Submit invalid value",
+        "id": "Log-in-functionality;submit-invalid-value",
+        "line": 23,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "name": "I am a user who is not logged in",
+            "line": 24,
+            "keyword": "Given ",
+            "result": {
+              "status": "passed",
+              "duration": 139755273
+            },
+            "match": {}
+          },
+          {
+            "name": "I navigate to the \"Log in\" page",
+            "line": 25,
+            "keyword": "And ",
+            "result": {
+              "status": "passed",
+              "duration": 114514134
+            },
+            "match": {}
+          },
+          {
+            "name": "I enter value \"xxx\" in element \"[data-hook=login__password]\"",
+            "line": 26,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 132129718
+            },
+            "match": {}
+          },
+          {
+            "name": "I submit the form \"[data-hook=login__form]\"",
+            "line": 27,
+            "keyword": "And ",
+            "result": {
+              "status": "passed",
+              "duration": 142238569
+            },
+            "match": {}
+          },
+          {
+            "name": "there is a \"[data-val-msg-for=login__password]\" element",
+            "line": 28,
+            "keyword": "Then ",
+            "result": {
+              "status": "failed",
+              "duration": 509785598,
+              "error_message": "Error: element ([data-val-msg-for=login__password]) still not existing after 500ms\n    at Object.Future.wait (C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\fibers\\future.js:449:15)\n    at Object.<anonymous> (C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\wdio-sync\\build\\index.js:345:27)\n    at World.<anonymous> (element-exists.js:4:17)\n    at C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\meteor-promise\\fiber_pool.js:33:40\n    - - - - -\n    at new CommandError (C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\webdriverio\\build\\lib\\utils\\ErrorHandler.js:109:12)\n    at C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\webdriverio\\build\\lib\\commands\\waitForExist.js:80:19\n    at Object.reject (C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\webdriverio\\build\\lib\\webdriverio.js:243:20)\n    at Object.callErrorHandlerAndReject (C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\webdriverio\\build\\lib\\webdriverio.js:217:27)\n    at C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\webdriverio\\build\\lib\\webdriverio.js:192:58\n    at run (C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\webdriverio\\node_modules\\core-js\\library\\modules\\es6.promise.js:104:47)\n    at C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\webdriverio\\node_modules\\core-js\\library\\modules\\es6.promise.js:115:28\n    at flush (C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\webdriverio\\node_modules\\core-js\\library\\modules\\$.microtask.js:19:5)\n    at nextTickCallbackWith0Args (node.js:453:9)\n    at process._tickCallback (node.js:382:13)"
+            },
+            "match": {}
+          },
+          {
+            "name": "the \"[data-val-msg-for=login__password]\" element contains the text \"Incorrect password.\"",
+            "line": 29,
+            "keyword": "And ",
+            "result": {
+              "status": "skipped"
+            },
+            "match": {}
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 192788
+            },
+            "match": {}
+          }
+        ]
+      },
+      {
+        "name": "Submit valid value",
+        "id": "Log-in-functionality;submit-valid-value",
+        "line": 31,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "name": "I am a user who is not logged in",
+            "line": 32,
+            "keyword": "Given ",
+            "result": {
+              "status": "passed",
+              "duration": 142665578
+            },
+            "match": {}
+          },
+          {
+            "name": "I navigate to the \"Log in\" page",
+            "line": 33,
+            "keyword": "And ",
+            "result": {
+              "status": "passed",
+              "duration": 120989470
+            },
+            "match": {}
+          },
+          {
+            "name": "I enter value \"admin\" in element \"[data-hook=login__password]\"",
+            "line": 34,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 137241500
+            },
+            "match": {}
+          },
+          {
+            "name": "I submit the form \"[data-hook=login__form]\"",
+            "line": 35,
+            "keyword": "And ",
+            "result": {
+              "status": "passed",
+              "duration": 126341295
+            },
+            "match": {}
+          },
+          {
+            "name": "the browser loads the \"Home\" page",
+            "line": 36,
+            "keyword": "Then ",
+            "result": {
+              "status": "failed",
+              "duration": 25005548,
+              "error_message": "AssertionError: false == true\n    at World.<anonymous> (page-load-success.js:10:9)\n    at C:\\xampp\\htdocs\\github_simonhudson\\aston-on-trent\\node_modules\\meteor-promise\\fiber_pool.js:33:40"
+            },
+            "match": {}
+          },
+          {
+            "keyword": "After ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 169160
+            },
+            "match": {}
+          }
+        ]
+      }
+    ]
+  }
+]
