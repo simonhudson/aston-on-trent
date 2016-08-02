@@ -2,7 +2,7 @@
   "name": "aston-on-trent",
   "version": "1.0.0",
   "description": "Aston-on-Trent",
-  "dependencies": {
+  "devDependencies": {
     "sass": "*",
     "gulp": "*",
     "browser-sync": "*",
@@ -19,5 +19,5 @@
     "chimp": "*",
     "a11y": "*"
   },
-  "devDependencies": {}
+  "dependencies": {}
 }

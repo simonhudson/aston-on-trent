@@ -94,6 +94,14 @@ gulp.task('delimgs', function() {
 });
 
 /***
+Copy htaccess
+***/
+gulp.task('copyhtaccess', function() {
+    return gulp.src(dirs.src + '.htaccess')
+        .pipe(gulp.dest(dirs.dest));
+});
+
+/***
 Sass -> CSS
 ***/
 gulp.task('sass', function () {
@@ -135,10 +143,18 @@ gulp.task('minifyjs', ['concatjs'], function() {
 });
 
 /***
+Copy libs
+***/
+gulp.task('copylibs', function() {
+    return gulp.src(config.src.libs + '**/*')
+        .pipe(gulp.dest(config.dest.libs));
+});
+
+/***
 Minify libs
 ***/
-gulp.task('minifylibs', function() {
-    return gulp.src(config.src.libs + '**/*.js')
+gulp.task('minifylibs', ['copylibs'], function() {
+    return gulp.src(config.dest.libs + '**/*.js')
         .pipe(uglify())
         .pipe(gulp.dest(config.dest.libs));
 });
@@ -221,6 +237,7 @@ gulp.task(
         'copyconfig',
         'copyfunctions',
         'copyincludes',
+        'copyhtaccess'
         // 'tests'
     ]
 );
