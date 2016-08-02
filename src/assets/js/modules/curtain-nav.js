@@ -1,16 +1,19 @@
 var CurtainMenu = {
-    
+
     Obj: {},
 
     openClass: 'is-open',
 
     init: function() {
-        CurtainMenu.Obj.toggle = $('.js-menu-toggle');
-        CurtainMenu.Obj.level1 = $('.js-curtain--level-1');
-        CurtainMenu.Obj.level2 = $('.js-curtain--level-2');
-        CurtainMenu.Obj.links = $('.level-1__link');
-        $('.curtain-nav').height($(document).height());
-        CurtainMenu.eventListeners();
+        var viewportWidth = s_Window.getViewportWidth();
+        // if (viewportWidth < 1024) {
+            CurtainMenu.Obj.toggle = $('.js-menu-toggle');
+            CurtainMenu.Obj.level1 = $('.js-curtain--level-1');
+            CurtainMenu.Obj.level2 = $('.js-curtain--level-2');
+            CurtainMenu.Obj.links = $('.level-1__link');
+            $('.curtain-nav').height($(document).height());
+            CurtainMenu.eventListeners();
+        // }
     },
 
     eventListeners: function() {
@@ -44,7 +47,6 @@ var CurtainMenu = {
         }
         target.width(CurtainMenu.Obj.level1.width() - 50);
     }
-
 
 };
 $(document).ready(CurtainMenu.init());

@@ -7,7 +7,7 @@ $subNav = (object) array(
     'ourvillage' => (object) array(
 
         'item1' => (object) array(
-            'url' => 'about-aston',
+            'url' => 'about',
             'mainNavText' => 'About Aston-on-Trent',
             'pageTitle' => 'About Aston-on-Trent'
         ),

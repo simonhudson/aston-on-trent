@@ -51,6 +51,7 @@
     @include animate(transform);
     @include padding();
     @include position-tr();
+    background:#444;
     color:#fff;
     text-decoration:none;
 
